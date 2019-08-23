@@ -9,82 +9,124 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>FlexBox Container</title>
+    <title>Front-End Challenge</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-    <style>
-        body,
-        html {
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            font-family: 'Courier New', Courier, monospace;
-            background: linear-gradient(30deg, #343434 70%, #333131 50%, #556677 50%);
-        }
-        
-        header,
-        footer {
-            color: aqua;
-            display: flex;
-            flex: 1;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        
-        [brand] h2 {
-            margin-right: 5px !important;
-            color: aqua;
-            display: flex;
-            ruby-align: distribute-space;
-        }
-        
-        main.flex-container {
-            display: flex;
-            padding: 2rem;
-            flex-flow: row wrap;
-            border: 2px solid white;
-        }
-        
-        div.flex-items {
-            color: azure;
-            margin: 2rem;
-            padding: 1rem;
-            flex: 2 2 20em;
-            border: 2px solid azure;
-            align-content: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body>
-    <!--[if lt IE 7]>
+<!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+<body>
     <header>
-        <div class="brand" brand>
-            <h2>Testing..</h2>
+        <nav>
+            <div data-brand-logo></div>
+            <img data-brand-img src="images/logo.svg" alt="brand">
+            </div>
+            <ul class="sign-buttons">
+                <a href="#">
+                    <li class="sign-in">Sign in</li>
+                </a>
+                <a href="#">
+                    <li class="sign-up"><button>Sign up</button> </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="header-flex-container">
+            <div class="header-flex-item flex-item-1">
+                <p>All your files in one secure <br> Location, Accessible Anywhere.
+                </p>
+                <button class="get-started-btn">Get Started</button>
+            </div>
+            <div class="header-flex-item flex-item-2">
+                <img src="images/illustration-hero.svg" alt="">
+            </div>
         </div>
     </header>
-    <main class="flex-container">
-        <div class="flex-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
-        <div class="flex-items">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus porro aperiam maiores optio, similique amet commodi provident in voluptatum quidem nobis magni eos, voluptas vero neque voluptatibus quia ex. Voluptas.</div>
+    <main>
+        <h1 body-flex-h1>Stay Productive, Wherever You Are</h1>
+        <div class="main-flex-container">
+            <div class="main-flex-items main-flex-items-1">
+                <img src="images/illustration-features.svg" alt="">
+            </div>
+            <div class="main-flex-items main-flex-items-2">
+                <h3 main-flex-h3>All Platforms, all <br> all devices, all your files </h3>
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ab corporis aliquam at eligendi suscipit sit deserunt, explicabo porro nam facilis vero officiis distinctio nisi, soluta dolore! Cupiditate, et sint!
+                </article>
+                <h3 main-flex-h3>Security you can rust</h3>
+                <article>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse molestias qui porro temporibus maiores? Maxime dolore eveniet fugiat cupiditate recusandae adipisci blanditiis mollitia architecto hic officia, deserunt et. Pariatur, temporibus.
+                </article>
+            </div>
+            <div class="main-flex-items main-flex-items-3">
+                <h3 main-flex-h3>Real-time Collaboration </h3>
+                <article>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ipsam molestias aperiam reprehenderit deleniti cumque vel unde, rerum, fugiat molestiae quas. Inventore officia tempore, optio fuga voluptas ipsam assumenda veritatis!
+                </article>
+                <h3 main-flex-h3>Automatic backups</h3>
+                <article>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatem omnis repellendus saepe rem pariatur autem nulla perferendis, totam vero nam aspernatur, ut quos veniam! Eligendi quidem pariatur nisi temporibus.
+                </article>
+            </div>
+        </div>
+        <div class="sub-main">
+            <h1 body-flex-h1>Get Early Access Today</h1>
+            <article sub-main-article>
+                It only takes a minutes to sign up and our free starter tier is extremely generous. If you have <br> any questions, our support team would be happy to help you.
+            </article>
+            <form action="">
+                <input type="text" placeholder="email@example.com">
+                <button btn-join>Join</button></form>
+
+        </div>
+
     </main>
     <footer>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, labore inventore placeat mollitia similique itaque autem eaque error deserunt culpa voluptatum recusandae. Adipisci dicta deserunt ipsam ab quas natus fugiat?</h3>
+        <div class="footer-flex-container">
+            <div class="footer-flex-item footer-item-1">
+                <img data-footer-img src="images/logo.svg" alt="brand">
+                <p><img src="images/icon-phone.svg" alt="phone">&nbsp; Phone: +1-543-123-4567</p>
+                <p><img src="images/icon-email.svg" alt="email">&nbsp; Email: example@flyo.com</p>
+            </div>
+            <div class="footer-flex-item footer-item-2">
+                <div class="sub-item2">
+                    <span class="sub-item2-head">Flyo</span>
+                    <p>Desktop App </p>
+                    <p>Mobile App</p>
+                    <p>Pricing</p>
+                    <p>Feature</p>
+
+                </div>
+                <div class="sub-item2">
+                    <span class="sub-item2-head">Company</span>
+                    <p>About Us </p>
+                    <p>Jobs</p>
+                    <p>Press</p>
+                    <p>Blog</p>
+                </div>
+                <div class="sub-item2">
+                    <span class="sub-item2-head">Support</span>
+                    <p>Contact Us </p>
+                    <p>Terms</p>
+                    <p>Privacy</p>
+
+                </div>
+            </div>
+            <div class="footer-flex-item footer-item-3">
+                <p footer-article>
+                    Recieve updates from us, including tips and <br> tricks on how to improve your workflow.
+                </p>
+                <form action="">
+                    <input type="text" footer-input placeholder=""><br>
+                    <button footer-btn-join>Join</button></form>
+            </div>
+        </div>
     </footer>
+
+
+
     <script src="" async defer></script>
 </body>
 
