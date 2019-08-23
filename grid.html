@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Grid</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .grid-container {
+            border: 2px solid white;
+            display: inline-grid;
+            grid-template-columns: 6em 1em 6em 1em 6em 1em 6em 1em;
+            grid-template-rows: 6em 1em 6em;
+        }
+        
+        .grid-items {
+            color: white;
+            box-sizing: border-box;
+            font-size: 1.5rem;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        .items-01 {
+            background: #A62E5C;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        
+        .items-02 {
+            background: rgb(219, 94, 22);
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        
+        .items-03 {
+            background: rgb(8, 99, 5);
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        
+        .items-04 {
+            background: rgb(7, 94, 100);
+        }
+        
+        .items-05 {
+            background: rgb(43, 5, 114);
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        
+        .items-06 {
+            background: rgb(245, 28, 209);
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        
+        .items-07 {
+            background: rgb(41, 3, 17);
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 3;
+        }
+        
+        .items-08 {
+            background: rgb(155, 74, 74);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-items items-01">Grid Item <br>01</div>
+        <div class="grid-items items-02">Grid Item <br>02</div>
+        <div class="grid-items items-03">Grid Item <br>03</div>
+        <div class="grid-items items-04">Grid Item <br>04</div>
+        <div class="grid-items items-05">Grid Item <br>05</div>
+        <div class="grid-items items-06">Grid Item <br>06</div>
+        <div class="grid-items items-07">Grid Item <br>07</div>
+        <div class="grid-items items-08">Grid Item <br>08</div>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="" async defer></script>
+</body>
+
+</html>
