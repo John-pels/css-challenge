@@ -85,14 +85,10 @@ button {
 }
 
 button:hover {
-    background: #2980b9;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #3C2E9E, #2980b9);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #3C2E9E, #3C2E9E);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transition: background .5s ease-in;
-    color: aliceblue;
+    background: #2c8ac9;
+    transition: background .5s ease-in-out;
+    -webkit-transition: background .5s ease-in-out;
+    color: rgb(16, 7, 77);
     line-height: 2.5rem;
 }
 
