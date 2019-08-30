@@ -86,8 +86,8 @@ button {
 
 button:hover {
     background: #2c8ac9;
-    transition: background .5s ease-in-out;
-    -webkit-transition: background .5s ease-in-out;
+    transition: background .8s ease-in-out;
+    -webkit-transition: background .8s ease-in-out;
     color: rgb(16, 7, 77);
     line-height: 2.5rem;
 }
