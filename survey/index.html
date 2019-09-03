@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <h1 heading-h1>Survey Form</h1>
+    <main main-container>
+        <p descritption items>Kindly fill in the form below and we will get back to you with immediate effect</p>
+        <form action="" method="get" form-input>
+            <div class="rowtab ">
+                <div class="labels rowtab-items">
+                    <label for="name" id="name-label">* Name:</label>
+                </div>
+                <div class="input-right rowtab-items">
+                    <input type="text" name="name" id="name" tabindex="1" autofocus required placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="rowtab ">
+                <div class="labels rowtab-items">
+                    <label for="email" id="email-label">* Email:</label>
+                </div>
+                <div class="input-right rowtab-items">
+                    <input type="email" name="email" id="email" tabindex="2" autofocus required placeholder="Enter your eMail address">
+                </div>
+            </div>
+            <div class="rowtab ">
+                <div class="labels rowtab-items">
+                    <label for="age" id="age-label">* Age:</label>
+                </div>
+                <div class="input-right rowtab-items">
+                    <input type="number" name="age" min="1" max="125" id="age" tabindex="3" autofocus required placeholder="Age">
+                </div>
+            </div>
+            <div class="rowtab ">
+                <div class="labels rowtab-items">
+                    <label for="student" id="student-label">Which option best describes your current role?</label>
+                </div>
+                <div class="input-right rowtab-items">
+                    <select name="student" id="student" tabindex="4">
+                            <option disabled value>Select an option</option>
+                            <option  value="student">Student</option>
+                            <option value="job">Full Time Job</option>
+                            <option value="learner">Full Time Learner</option>
+                            <option value="preferNo">Prefer not to say</option>
+                            <option value="other">Other</option>
+                   </select>
+                </div>
+            </div>
+            <div class="rowtab ">
+                <div class="labels rowtab-items">
+                    <label for="userRating" id="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div class="input-right rowtab-items">
+                    <input type="radio" name="radio-buttons" value="1" tabindex="5">Definitely<br>
+                    <input type="radio" name="radio-buttons" value="2" tabindex="6">Maybe<br>
+                    <input type="radio" name="radio-buttons" value="3" tabindex="7">Not Sure
+
+                </div>
+            </div>
+            <div class="rowtab ">
+                <div class="labels rowtab-items">
+                    <label for="student" id="student-label">What do you like most in FCC:</label>
+                </div>
+                <div class="input-right rowtab-items">
+                    <select name="most-like" id="most-like" tabindex="8">
+                        <option disabled selected value>Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="openSource">Open Source</option>
+                   </select>
+                </div>
+            </div>
+            <div class="rowtab ">
+                <div class="labels rowtab-items">
+                    <label for="preferences" id="preferences">Things that should be improved in the future
+                            (Check all that apply):</label>
+                </div>
+                <div class="input-right rowtab-items">
+                    <input type="checkbox" name="prefer" value="1" tabindex="9">Definitely<br>
+                    <input type="checkbox" name="prefer" value="2" tabindex="10">Maybe<br>
+                    <input type="checkbox" name="prefer" value="3" tabindex="11">Not Sure <br>
+                    <input type="checkbox" name="prefer" value="4" tabindex="12">Definitely<br>
+                    <input type="checkbox" name="prefer" value="5" tabindex="13">Maybe<br>
+                    <input type="checkbox" name="prefer" value="6" tabindex="14">Not Sure <br>
+                    <input type="checkbox" name="prefer" value="7" tabindex="15">Definitely<br>
+                    <input type="checkbox" name="prefer" value="8" tabindex="16">Maybe<br>
+                    <input type="checkbox" name="prefer" value="9" tabindex="17">Not Sure <br>
+                    <input type="checkbox" name="prefer" value="10" tabindex="18">Definitely
+
+
+                </div>
+            </div>
+            <div class="rowtab ">
+                <div class="labels rowtab-items">
+                    <label for="comment" id="comment">Any Comments or Suggestions?</label>
+                </div>
+                <div class="input-right rowtab-items">
+                    <textarea name="comment" id="comment" cols="30" rows="5" tabindex="19" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+            <div class="rowtab ">
+                <div class="labels rowtab-items">
+                    <label for="Submit" id="Submit"></label>
+                </div>
+                <div class="input-right rowtab-items">
+                    <button type="submit" id="submit" tabindex="20">Submit</button>
+                </div>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
