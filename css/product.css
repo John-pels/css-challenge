@@ -1,0 +1,343 @@
+    @import "https://fonts.googleapis.com/css?family=Lato:400,700";
+     :root {
+        background: #EEEEEE;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    body,
+    html {
+        padding: 0;
+        margin: 0;
+        font-family: 'Lato', sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        position: fixed;
+        top: 0;
+        flex-flow: row wrap;
+        background: rgb(70, 69, 69);
+    }
+    
+    img[img-brand] {
+        display: block;
+        width: 50%;
+        height: 3em;
+        padding: 0.5rem;
+        color: #FF8C00;
+    }
+    
+    .header-items {
+        flex: 1;
+    }
+    
+    .items-02 ul {
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    
+    ul>li>a {
+        text-decoration: none;
+        color: #FF8C00;
+        font-size: 1.2em;
+    }
+    
+    ul>li>a:hover {
+        -webkit-transition: color .5s ease-in;
+        -ms-transition: color .5s ease-in;
+        -o-transition: color .5s ease-in;
+        -moz-transition: color .5s ease-in;
+        transition: color .5s ease-in;
+        color: #FFF;
+        font-weight: 500;
+    }
+    
+    section[get-started] {
+        display: flex;
+        text-align: center;
+        flex-flow: column wrap;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(../images/Jazz-women1-1024x682.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* margin-top: 5rem; */
+        padding: 15em;
+        justify-content: center;
+        /* border: 2px solid green; */
+    }
+    
+    section[get-started] h2 {
+        letter-spacing: 0.1em;
+        color: rgb(238, 234, 234);
+    }
+    
+    input[type="email"] {
+        width: 70%;
+        height: 2.0rem;
+        border-radius: 0.3em;
+        align-items: center;
+        font-size: 1.0em;
+        border: none;
+        box-shadow: 0 0 1.0em #efc9c9;
+        outline: none;
+    }
+    
+    input::placeholder {
+        color: gray;
+        padding: 1.5rem;
+    }
+    
+    button[btn-get-started] {
+        width: 40%;
+        height: 2.0rem;
+        line-height: 2.0rem;
+        margin-top: 1.0rem;
+        border-radius: 0.3em;
+        align-items: center;
+        border: none;
+        color: #FFF;
+        text-transform: uppercase;
+        box-shadow: 0 0 1.0em #c29b9b;
+        outline: none;
+        cursor: pointer;
+        background: #FF8C00;
+        font-weight: 600;
+    }
+    
+    button[btn-get-started]:hover {
+        background: rgb(158, 90, 8);
+        -webkit-transition: background .8s ease-in-out;
+        -ms-transition: background .8s ease-in-out;
+        -o-transition: background .8s ease-in-out;
+        -moz-transition: background .8s ease-in-out;
+        transition: background .8s ease-in-out;
+    }
+    
+    main {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    section[services-container] {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 1.5em;
+    }
+    
+    .services-items {
+        padding: 2.5rem;
+        border: 1px solid gray;
+        border-top-left-radius: 1.5em;
+        border-bottom-right-radius: 1.5em;
+        box-shadow: 0.2em 0 0.3em #c29b9b;
+        margin: 1rem;
+        flex: 1;
+        text-align: center;
+        color: rgb(66, 66, 66);
+    }
+    
+    .services-items:hover {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+        -webkit-transition: transform .6s .2s;
+        -ms-transition: transform .6s .2s;
+        -moz-transition: transform .6s .2s;
+        -o-transition: transform .6s .2s;
+        transition: transform .6s .2s;
+    }
+    
+    .services-items .icon {
+        color: rgb(221, 138, 37);
+    }
+    
+    .icon .fa-fire:hover {
+        -webkit-transform: scale(1.5) rotate(360deg);
+        -ms-transform: scale(1.5) rotate(360deg);
+        -moz-transform: scale(1.5) rotate(360deg);
+        -o-transform: scale(1.5) rotate(360deg);
+        transform: scale(1.5) rotate(360deg);
+        -webkit-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        -ms-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        -moz-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        -o-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        color: rgb(243, 63, 31);
+        cursor: pointer;
+    }
+    
+    .icon .fa-truck:hover {
+        -webkit-transform: translate(-150px);
+        -ms-transform: translate(-150px);
+        -o-transform: translate(-150px);
+        -moz-transform: translate(-150px);
+        transform: translate(-150px);
+        -webkit-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        -ms-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        -moz-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        -o-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        color: rgb(128, 6, 6);
+        cursor: pointer;
+    }
+    
+    .icon .fa-battery-full:hover {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+        -webkit-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        -ms-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        -moz-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        -o-transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        transition: transform .6s .2s ease-in-out, color .4s ease-in;
+        color: rgb(22, 187, 36);
+        cursor: pointer;
+    }
+    
+    .services-items p {
+        /* padding: 0.5em; */
+        text-align: justify;
+    }
+    
+    section[demo] {
+        display: flex;
+        flex: 1;
+        padding: 2em;
+        margin: 0 auto;
+        justify-content: center;
+        background: #FFF;
+    }
+    
+    section[pricing] {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0.7em;
+        color: rgb(66, 66, 66);
+    }
+    
+    .pricing-items {
+        border: 1px solid gray;
+        /* border-radius: 1.5em; */
+        box-shadow: 0.2em 0 0.3em #c29b9b;
+        margin: 1rem;
+        flex: 1;
+        text-align: center;
+    }
+    
+    .pricing-items:hover {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+        -webkit-transition: transform .6s .2s;
+        -ms-transition: transform .6s .2s;
+        -moz-transition: transform .6s .2s;
+        -o-transition: transform .6s .2s;
+        transition: transform .6s .2s;
+    }
+    
+    .pricing-items .level {
+        background: rgb(163, 162, 162);
+        padding: 1.5em 0 !important;
+        /* border-radius: 1.5em; */
+        color: #FFF;
+        font-weight: 600;
+    }
+    
+    .pricing-items ol {
+        list-style: none;
+        padding: .2em;
+    }
+    
+    button[btn-pricing] {
+        width: 30%;
+        height: 2.0rem;
+        line-height: 2.0rem;
+        margin-top: 1.0rem;
+        border-radius: 0.3em;
+        align-items: center;
+        border: none;
+        color: #FFF;
+        text-transform: uppercase;
+        box-shadow: 0 0 1.2em #c29b9b;
+        outline: none;
+        cursor: pointer;
+        background: #FF8C00;
+        font-weight: 600;
+    }
+    
+    button[btn-pricing]:hover {
+        background: rgb(158, 90, 8);
+        -webkit-transition: background .8s ease-in-out;
+        -ms-transition: background .8s ease-in-out;
+        -o-transition: background .8s ease-in-out;
+        -moz-transition: background .8s ease-in-out;
+        transition: background .8s ease-in-out;
+    }
+    
+    footer {
+        display: flex;
+        width: 100%;
+        flex-flow: column wrap;
+        align-content: center;
+        background: rgb(70, 69, 69);
+        color: rgb(233, 138, 21);
+    }
+    
+    footer>ul>li>a {
+        margin: .2em;
+    }
+    
+    footer>ul>li {
+        list-style: none;
+        display: inline-flex;
+    }
+    /* FOR MOBILE RESPONSIVENESS */
+    
+    @media (max-width:768px) {
+        ul>li>a {
+            font-size: 1.1em;
+        }
+        section[get-started] {
+            display: flex;
+            width: 100%;
+        }
+        section[get-started] h2 {
+            font-size: 1.2em;
+        }
+        button[btn-get-started] {
+            width: 50%;
+        }
+        section[services-container] {
+            flex-flow: column wrap;
+            margin: 2em;
+            padding: none;
+            align-content: center;
+        }
+        section[pricing] {
+            display: flex;
+            margin: 2em;
+            flex-flow: column wrap;
+        }
+        button[btn-pricing] {
+            margin-bottom: 1.5em;
+        }
+        /* footer {
+            width: 100%;
+        } */
+    }

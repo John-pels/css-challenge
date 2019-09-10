@@ -88,8 +88,8 @@ button.get-started-btn {
     background: hsl(163, 95%, 43%);
     border-radius: 0.2em;
     color: #FFF;
-    width: 10em;
-    padding: 0.6em;
+    width: 15em;
+    padding: 0.8em;
     cursor: pointer;
 }
 
@@ -267,6 +267,7 @@ img[data-footer-img] {
 
 .footer-item-3 form {
     flex-flow: column wrap;
+    flex-grow: 1;
 }
 
 p[footer-article] {
@@ -281,7 +282,8 @@ input[footer-input] {
 }
 
 button[footer-btn-join] {
-    width: 100%;
+    align-self: flex-end;
+    width: 50%;
     height: 3em;
     color: #FFF;
     font-weight: 600;
